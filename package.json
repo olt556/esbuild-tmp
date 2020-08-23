@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-dev": "./node_modules/./bin/esbuild build.ts development",
-    "build-prod": "./node_modules/./bin/esbuild build.ts production"
+    "build-dev": "node build.ts development",
+    "build-prod": "node build.ts production"
   },
   "author": "",
   "license": "ISC",

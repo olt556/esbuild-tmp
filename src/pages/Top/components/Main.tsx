@@ -34,7 +34,7 @@ const Main = (): JSX.Element => {
     }
   };
   return (
-    <main className={styles.timeLine}>
+    <main>
       <ul>{getBodyListElms([])}</ul>
     </main>
   );
