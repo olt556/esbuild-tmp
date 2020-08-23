@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-dev": "./node_modules/./bin/esbuild build.ts development",
+    "build-prod": "./node_modules/./bin/esbuild build.ts production"
   },
   "author": "",
   "license": "ISC",
