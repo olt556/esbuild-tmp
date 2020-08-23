@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "allowJs": true,
+    "strict": true,
+    "target": "ES6",
+    "jsx": "react",
+    "baseUrl":"src/",
+    "moduleResolution": "node",
+    "paths": {
+      "@commons/*": ["commons/*"],
+    }
+  },
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+  ],
+}
