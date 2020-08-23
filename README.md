@@ -2,4 +2,5 @@
 
 ## Build
 
-`./node_modules/./bin/esbuild build.ts ?(production | development)`
+`npm run build-dev` development
+`npm run build-prod` production
