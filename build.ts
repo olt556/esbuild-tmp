@@ -2,11 +2,10 @@ const { argv } = require('process')
 const { build } = require('esbuild')
 const path = require('path')
 
-process.env.NODE_ENV = argv[2]
-
 const options = {
+  define: { 'process.env.NODE_ENV': process.env.NODE_ENV },
   entryPoints: [path.resolve(__dirname, 'src/Index.tsx')],
-  minify: process.env.NODE_ENV === 'production',
+  minify: argv[2] === 'production',
   bundle: true,
   target: 'es2016',
   platform: 'browser',
