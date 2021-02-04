@@ -1,8 +1,16 @@
 import * as React from 'react';
 import { useState, Dispatch, SetStateAction } from 'react';
 
-const getBodyListElms = (timeLineDataLists: Array<Record<string, any>>): Array<JSX.Element> => {
-  return timeLineDataLists.map((timeLineDataList: Record<string, any>, key: number) => (
+type TimeLineData = {
+  img: string,
+  user: string,
+  user_id: string,
+  text: string,
+  time_stamp: string
+}
+
+const getBodyListElms = (timeLineDataLists: Record<string, TimeLineData>[]): JSX.Element[] => {
+  return timeLineDataLists.map((timeLineDataList, key) => (
     <li key={key}>
       <div>
         <div>
